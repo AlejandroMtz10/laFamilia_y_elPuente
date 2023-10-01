@@ -1,0 +1,12 @@
+D:\familia_y_puente\laFamilia_y_elPuente\bin\Debug\laFamilia_y_elPuente.exe.config
+D:\familia_y_puente\laFamilia_y_elPuente\bin\Debug\laFamilia_y_elPuente.exe
+D:\familia_y_puente\laFamilia_y_elPuente\bin\Debug\laFamilia_y_elPuente.pdb
+D:\familia_y_puente\laFamilia_y_elPuente\bin\Debug\laFamilia_y_elPuente.xml
+D:\familia_y_puente\laFamilia_y_elPuente\obj\Debug\laFamilia_y_elPuente.vbproj.AssemblyReference.cache
+D:\familia_y_puente\laFamilia_y_elPuente\obj\Debug\laFamilia_y_elPuente.Form1.resources
+D:\familia_y_puente\laFamilia_y_elPuente\obj\Debug\laFamilia_y_elPuente.Resources.resources
+D:\familia_y_puente\laFamilia_y_elPuente\obj\Debug\laFamilia_y_elPuente.vbproj.GenerateResource.cache
+D:\familia_y_puente\laFamilia_y_elPuente\obj\Debug\laFamilia_y_elPuente.vbproj.CoreCompileInputs.cache
+D:\familia_y_puente\laFamilia_y_elPuente\obj\Debug\laFamilia_y_elPuente.exe
+D:\familia_y_puente\laFamilia_y_elPuente\obj\Debug\laFamilia_y_elPuente.xml
+D:\familia_y_puente\laFamilia_y_elPuente\obj\Debug\laFamilia_y_elPuente.pdb
