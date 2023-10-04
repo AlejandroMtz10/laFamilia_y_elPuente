@@ -369,8 +369,8 @@ Partial Class Form1
         Me.BackgroundImage = Global.laFamilia_y_elPuente.My.Resources.Resources.escenario
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1264, 681)
-        Me.Controls.Add(Me.btnReiniciar)
         Me.Controls.Add(Me.imgLinterna)
+        Me.Controls.Add(Me.btnReiniciar)
         Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.PictureBox4)
@@ -391,9 +391,10 @@ Partial Class Form1
         Me.Controls.Add(Me.mama)
         Me.Controls.Add(Me.hijo)
         Me.Controls.Add(Me.hija)
-        Me.Controls.Add(Me.papa)
         Me.Controls.Add(Me.lblTime)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.papa)
+        Me.DoubleBuffered = True
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Form1"
