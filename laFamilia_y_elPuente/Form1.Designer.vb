@@ -89,7 +89,7 @@ Partial Class Form1
         Me.lblTime.Name = "lblTime"
         Me.lblTime.Size = New System.Drawing.Size(72, 55)
         Me.lblTime.TabIndex = 1
-        Me.lblTime.Text = "60"
+        Me.lblTime.Text = "30"
         '
         'papa
         '
