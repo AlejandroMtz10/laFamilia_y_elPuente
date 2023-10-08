@@ -911,7 +911,7 @@
                 If papa.Visible = True And papaIzq.Visible = False Then
                     If papaPrimero = True Then
                         papa.Left = 650
-                        papa.Top = 255
+                        papa.Top = 260
                         imgLinterna.Left = 620
                         imgLinterna.Top = 390
                     Else
@@ -922,7 +922,7 @@
                 ElseIf papaIzq.Visible = True And papa.Visible = False Then
                     If papaPrimero = True Then
                         papaIzq.Left = 510
-                        papaIzq.Top = 255
+                        papaIzq.Top = 260
                         imgLinterna.Left = 565
                         imgLinterna.Top = 400
                     Else
@@ -934,7 +934,7 @@
             End If
 
             If checkPapa.Checked = False Then
-                If (papa.Left >= 650 And papa.Top = 255) Then
+                If (papa.Left >= 650 And papa.Top = 260) Then
                     If papaPrimero = True Then
                         papa.Top = 267
                         papa.Left = 841
@@ -976,7 +976,7 @@
                     End If
                 End If
 
-                If (papaIzq.Left <= 510 And papaIzq.Top = 255) Then
+                If (papaIzq.Left <= 510 And papaIzq.Top = 260) Then
                     If papaPrimero = True Then
                         papaIzq.Top = 304
                         papaIzq.Left = 310
@@ -1072,8 +1072,38 @@
                     If hijaPrimero = True Then
                         hija.Left = 912
                         hija.Top = 261
-                        imgLinterna.Left = 793
-                        imgLinterna.Top = 394
+                        If papaSegundo = True Or hijoSegundo = True Or hijoMenorSegundo = True Or mamaSegundo = True Then
+                            If checkPapa.Checked = True Then
+                                papaPrimero = True
+                                papaSegundo = False
+                                papa.Left = 651
+                                papa.Top = 260
+                            End If
+
+                            If checkHijo.Checked = True Then
+                                hijoPrimero = True
+                                hijoSegundo = False
+                                hijo.Left = 651
+                                hijo.Top = 260
+                            End If
+
+                            If checkHijoMenor.Checked = True Then
+                                hijoMenorPrimero = True
+                                hijoMenorSegundo = False
+                                hijo2.Left = 651
+                                hijo2.Top = 352
+                            End If
+
+                            If checkMama.Checked = True Then
+                                mamaPrimero = True
+                                mamaSegundo = False
+                                mama.Left = 651
+                                mama.Top = 260
+                            End If
+                        Else
+                            imgLinterna.Left = 793
+                            imgLinterna.Top = 394
+                        End If
                     ElseIf hijaSegundo Then
                         hija.Left = 912
                         hija.Top = 261
@@ -1083,8 +1113,39 @@
                     If hijaPrimero = True Then
                         hijaIzq.Left = 242
                         hijaIzq.Top = 305
-                        imgLinterna.Left = 391
-                        imgLinterna.Top = 429
+
+                        If papaSegundo = True Or hijoSegundo = True Or hijoMenorSegundo = True Or mamaSegundo = True Then
+                            If checkPapa.Checked = True Then
+                                papaPrimero = True
+                                papaSegundo = False
+                                papaIzq.Left = 502
+                                papaIzq.Top = 260
+                            End If
+
+                            If checkHijo.Checked = True Then
+                                hijoPrimero = True
+                                hijoSegundo = False
+                                hijoIzq.Left = 502
+                                hijoIzq.Top = 260
+                            End If
+
+                            If checkHijoMenor.Checked = True Then
+                                hijoMenorPrimero = True
+                                hijoMenorSegundo = False
+                                hijo2Izq.Left = 502
+                                hijo2Izq.Top = 352
+                            End If
+
+                            If checkMama.Checked = True Then
+                                mamaPrimero = True
+                                mamaSegundo = False
+                                mamaIzq.Left = 502
+                                mamaIzq.Top = 260
+                            End If
+                        Else
+                            imgLinterna.Left = 391
+                            imgLinterna.Top = 429
+                        End If
                     ElseIf hijaSegundo = True Then
                         hijaIzq.Left = 242
                         hijaIzq.Top = 305
@@ -1141,17 +1202,87 @@
             End If
 
             If checkHijo.Checked = False Then
-                If hijo.Left = 726 And hijo.Top = 241 Or hijoPrimero = True Then
-                    hijo.Left = 985
-                    hijo.Top = 250
-                    imgLinterna.Left = 793
-                    imgLinterna.Top = 429
+                If hijo.Left >= 650 And hijo.Top = 260 Then
+                    If hijoPrimero = True Then
+                        hijo.Left = 985
+                        hijo.Top = 250
+                        If papaSegundo = True Or hijaSegundo = True Or hijoMenorSegundo = True Or mamaSegundo = True Then
+                            If checkPapa.Checked = True Then
+                                papaPrimero = True
+                                papaSegundo = False
+                                papa.Left = 651
+                                papa.Top = 260
+                            End If
+
+                            If checkHija.Checked = True Then
+                                hijaPrimero = True
+                                hijaSegundo = False
+                                hija.Left = 651
+                                hija.Top = 260
+                            End If
+
+                            If checkHijoMenor.Checked = True Then
+                                hijoMenorPrimero = True
+                                hijoMenorSegundo = False
+                                hijo2.Left = 651
+                                hijo2.Top = 352
+                            End If
+
+                            If checkMama.Checked = True Then
+                                mamaPrimero = True
+                                mamaSegundo = False
+                                mama.Left = 651
+                                mama.Top = 260
+                            End If
+                        Else
+                            imgLinterna.Left = 793
+                            imgLinterna.Top = 394
+                        End If
+                    ElseIf hijoSegundo = True Then
+                        hijo.Left = 985
+                        hijo.Top = 250
+                    End If
                 End If
-                If hijoIzq.Left = 427 And hijoIzq.Top = 250 Or hijoPrimero = True Then
-                    hijoIzq.Left = 193
-                    hijoIzq.Top = 314
-                    imgLinterna.Left = 391
-                    imgLinterna.Top = 394
+                If hijoIzq.Left <= 502 And hijoIzq.Top = 260 Then
+                    If hijoPrimero = True Then
+                        hijoIzq.Left = 193
+                        hijoIzq.Top = 314
+                        If papaSegundo = True Or hijaSegundo = True Or hijoMenorSegundo = True Or mamaSegundo = True Then
+                            If checkPapa.Checked = True Then
+                                papaPrimero = True
+                                papaSegundo = False
+                                papaIzq.Left = 502
+                                papaIzq.Top = 260
+                            End If
+
+                            If checkHija.Checked = True Then
+                                hijaPrimero = True
+                                hijaSegundo = False
+                                hijaIzq.Left = 502
+                                hijaIzq.Top = 260
+                            End If
+
+                            If checkHijoMenor.Checked = True Then
+                                hijoMenorPrimero = True
+                                hijoMenorSegundo = False
+                                hijo2Izq.Left = 502
+                                hijo2Izq.Top = 352
+                            End If
+
+                            If checkMama.Checked = True Then
+                                mamaPrimero = True
+                                mamaSegundo = False
+                                mamaIzq.Left = 502
+                                mamaIzq.Top = 260
+                            End If
+                        Else
+                            imgLinterna.Left = 391
+                            imgLinterna.Top = 429
+                        End If
+                    ElseIf hijoSegundo = True Then
+                        hijoIzq.Left = 242
+                        hijoIzq.Top = 305
+                    End If
                 End If
 
                 If hijoPrimero = True Then
@@ -1182,7 +1313,7 @@
                     If hijoMenorPrimero = True Then
                         hijo2.Left = 651
                         hijo2.Top = 352
-                        imgLinterna.Left = 620
+                        imgLinterna.Left = 610
                         imgLinterna.Top = 390
                     Else
                         hijo2.Left = 726
@@ -1193,7 +1324,7 @@
                     If hijoMenorPrimero = True Then
                         hijo2Izq.Left = 502
                         hijo2Izq.Top = 352
-                        imgLinterna.Left = 565
+                        imgLinterna.Left = 570
                         imgLinterna.Top = 390
                     Else
                         hijo2Izq.Left = 427
@@ -1204,17 +1335,88 @@
             End If
 
             If checkHijoMenor.Checked = False Then
-                If hijo2.Left = 726 And hijo2.Top = 241 Or hijoMenorPrimero = True Then
-                    hijo2.Left = 1051
-                    hijo2.Top = 340
-                    imgLinterna.Left = 793
-                    imgLinterna.Top = 429
+                If hijo2.Left >= 651 And hijo2.Top = 352 Then
+                    If hijoMenorPrimero = True Then
+                        hijo2.Left = 1051
+                        hijo2.Top = 340
+
+                        If papaSegundo = True Or hijaSegundo = True Or hijoSegundo = True Or mamaSegundo = True Then
+                            If checkPapa.Checked = True Then
+                                papaPrimero = True
+                                papaSegundo = False
+                                papa.Left = 651
+                                papa.Top = 260
+                            End If
+
+                            If checkHija.Checked = True Then
+                                hijaPrimero = True
+                                hijaSegundo = False
+                                hija.Left = 651
+                                hija.Top = 260
+                            End If
+
+                            If checkHijo.Checked = True Then
+                                hijoPrimero = True
+                                hijoSegundo = False
+                                hijo.Left = 651
+                                hijo.Top = 260
+                            End If
+
+                            If checkMama.Checked = True Then
+                                mamaPrimero = True
+                                mamaSegundo = False
+                                mama.Left = 651
+                                mama.Top = 260
+                            End If
+                        Else
+                            imgLinterna.Left = 793
+                            imgLinterna.Top = 394
+                        End If
+                    ElseIf hijoSegundo = True Then
+                        hijo2.Left = 1051
+                        hijo2.Top = 340
+                    End If
                 End If
-                If hijo2Izq.Left = 427 And hijo2Izq.Top = 250 Or hijoMenorPrimero = True Then
-                    hijo2Izq.Left = 136
-                    hijo2Izq.Top = 414
-                    imgLinterna.Left = 391
-                    imgLinterna.Top = 394
+                If hijo2Izq.Left <= 502 And hijo2Izq.Top = 352 Then
+                    If hijoMenorPrimero = True Then
+                        hijo2Izq.Left = 136
+                        hijo2Izq.Top = 414
+                        If papaSegundo = True Or hijaSegundo = True Or hijoSegundo = True Or mamaSegundo = True Then
+                            If checkPapa.Checked = True Then
+                                papaPrimero = True
+                                papaSegundo = False
+                                papaIzq.Left = 502
+                                papaIzq.Top = 260
+                            End If
+
+                            If checkHija.Checked = True Then
+                                hijaPrimero = True
+                                hijaSegundo = False
+                                hijaIzq.Left = 502
+                                hijaIzq.Top = 260
+                            End If
+
+                            If checkHijo.Checked = True Then
+                                hijoPrimero = True
+                                hijoSegundo = False
+                                hijoIzq.Left = 502
+                                hijoIzq.Top = 260
+                            End If
+
+                            If checkMama.Checked = True Then
+                                mamaPrimero = True
+                                mamaSegundo = False
+                                mamaIzq.Left = 502
+                                mamaIzq.Top = 260
+                            End If
+                        Else
+                            imgLinterna.Left = 391
+                            imgLinterna.Top = 429
+                        End If
+                    ElseIf hijoMenorSegundo = True Then
+                        hijo2Izq.Left = 136
+                        hijo2Izq.Top = 414
+                    End If
                 End If
 
                 If hijoMenorPrimero = True Then
@@ -1237,58 +1439,128 @@
             MsgBox("No se puede seleccionar a la mamá porque la lampara esta del lado opuesto.", vbExclamation, "No seleccionable.")
         Else
             If papaPrimero = False And hijaPrimero = False And hijoMenorPrimero = False And hijoPrimero = False Then
-            mamaPrimero = True
-        ElseIf papaPrimero = True Or hijaPrimero = True Or hijoMenorPrimero = True Or hijoPrimero = True Then
-            mamaSegundo = True
-        End If
-        If checkMama.Checked = True Then
-            If mama.Visible = True And mamaIzq.Visible = False Then
+                mamaPrimero = True
+            ElseIf papaPrimero = True Or hijaPrimero = True Or hijoMenorPrimero = True Or hijoPrimero = True Then
+                mamaSegundo = True
+            End If
+            If checkMama.Checked = True Then
+                If mama.Visible = True And mamaIzq.Visible = False Then
+                    If mamaPrimero = True Then
+                        mama.Left = 651
+                        mama.Top = 255
+                        imgLinterna.Left = 620
+                        imgLinterna.Top = 390
+                    Else
+                        mama.Left = 726
+                        mama.Top = 255
+                    End If
+
+                ElseIf mamaIzq.Visible = True And mama.Visible = False Then
+                    If mamaPrimero = True Then
+                        mamaIzq.Left = 502
+                        mamaIzq.Top = 255
+                        imgLinterna.Left = 565
+                        imgLinterna.Top = 400
+                    Else
+                        mamaIzq.Left = 427
+                        mamaIzq.Top = 255
+                    End If
+
+                End If
+            End If
+
+            If checkMama.Checked = False Then
+                If mama.Left >= 651 And mama.Top = 255 Then
+                    If mamaPrimero = True Then
+                        mama.Left = 1110
+                        mama.Top = 230
+                        If papaSegundo = True Or hijoSegundo = True Or hijoMenorSegundo = True Or hijaSegundo = True Then
+                            If checkPapa.Checked = True Then
+                                papaPrimero = True
+                                papaSegundo = False
+                                papa.Left = 651
+                                papa.Top = 260
+                            End If
+
+                            If checkHijo.Checked = True Then
+                                hijoPrimero = True
+                                hijoSegundo = False
+                                hijo.Left = 651
+                                hijo.Top = 260
+                            End If
+
+                            If checkHijoMenor.Checked = True Then
+                                hijoMenorPrimero = True
+                                hijoMenorSegundo = False
+                                hijo2.Left = 651
+                                hijo2.Top = 352
+                            End If
+
+                            If checkHija.Checked = True Then
+                                hijaPrimero = True
+                                hijaSegundo = False
+                                hija.Left = 651
+                                hija.Top = 260
+                            End If
+                        Else
+                            imgLinterna.Left = 793
+                            imgLinterna.Top = 394
+                        End If
+                    ElseIf hijaSegundo Then
+                        mama.Left = 1110
+                        mama.Top = 230
+                    End If
+                End If
+                If mamaIzq.Left <= 502 And mamaIzq.Top = 255 Then
+                    If mamaPrimero = True Then
+                        mamaIzq.Left = 83
+                        mamaIzq.Top = 321
+
+                        If papaSegundo = True Or hijoSegundo = True Or hijoMenorSegundo = True Or hijaSegundo = True Then
+                            If checkPapa.Checked = True Then
+                                papaPrimero = True
+                                papaSegundo = False
+                                papaIzq.Left = 502
+                                papaIzq.Top = 260
+                            End If
+
+                            If checkHijo.Checked = True Then
+                                hijoPrimero = True
+                                hijoSegundo = False
+                                hijoIzq.Left = 502
+                                hijoIzq.Top = 260
+                            End If
+
+                            If checkHijoMenor.Checked = True Then
+                                hijoMenorPrimero = True
+                                hijoMenorSegundo = False
+                                hijo2Izq.Left = 502
+                                hijo2Izq.Top = 352
+                            End If
+
+                            If checkHija.Checked = True Then
+                                hijaPrimero = True
+                                hijaSegundo = False
+                                hijaIzq.Left = 502
+                                hijaIzq.Top = 260
+                            End If
+                        Else
+                            imgLinterna.Left = 391
+                            imgLinterna.Top = 429
+                        End If
+                    ElseIf hijaSegundo = True Then
+                        mamaIzq.Left = 83
+                        mamaIzq.Top = 321
+                    End If
+                End If
                 If mamaPrimero = True Then
-                    mama.Left = 651
-                    mama.Top = 255
-                    imgLinterna.Left = 620
-                    imgLinterna.Top = 390
-                Else
-                    mama.Left = 726
-                    mama.Top = 255
+                    mamaPrimero = False
                 End If
 
-            ElseIf mamaIzq.Visible = True And mama.Visible = False Then
-                If mamaPrimero = True Then
-                    mamaIzq.Left = 502
-                    mamaIzq.Top = 255
-                    imgLinterna.Left = 565
-                    imgLinterna.Top = 400
-                Else
-                    mamaIzq.Left = 427
-                    mamaIzq.Top = 255
+                If mamaSegundo = True Then
+                    mamaSegundo = False
                 End If
-
             End If
-        End If
-
-        If checkMama.Checked = False Then
-            If mama.Left = 726 And mama.Top = 241 Or mamaPrimero = True Then
-                mama.Left = 1110
-                mama.Top = 230
-                    imgLinterna.Left = 793
-                    imgLinterna.Top = 429
-            End If
-            If mamaIzq.Left = 427 And mamaIzq.Top = 250 Or mamaPrimero = True Then
-                mamaIzq.Left = 83
-                mamaIzq.Top = 321
-                    imgLinterna.Left = 391
-                    imgLinterna.Top = 394
-            End If
-
-            If mamaPrimero = True Then
-                mamaPrimero = False
-            End If
-
-            If mamaSegundo = True Then
-                mamaSegundo = False
-            End If
-        End If
         End If
     End Sub
 

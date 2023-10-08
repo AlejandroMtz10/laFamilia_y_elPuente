@@ -370,6 +370,7 @@ Partial Class Form1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1264, 681)
         Me.Controls.Add(Me.imgLinterna)
+        Me.Controls.Add(Me.hijo2Izq)
         Me.Controls.Add(Me.btnReiniciar)
         Me.Controls.Add(Me.PictureBox6)
         Me.Controls.Add(Me.PictureBox5)
@@ -382,7 +383,6 @@ Partial Class Form1
         Me.Controls.Add(Me.checkHija)
         Me.Controls.Add(Me.checkHijo)
         Me.Controls.Add(Me.checkPapa)
-        Me.Controls.Add(Me.hijo2Izq)
         Me.Controls.Add(Me.mamaIzq)
         Me.Controls.Add(Me.hijoIzq)
         Me.Controls.Add(Me.hijaIzq)
