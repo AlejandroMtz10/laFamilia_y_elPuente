@@ -38,6 +38,7 @@
 
     Dim linternaIzq As Boolean = False
 
+    Dim music As Boolean = True
     Private Sub btnEmpezar_Click(sender As Object, e As EventArgs) Handles btnEmpezar.Click
         marcados = 0
         revisarInicio()
@@ -1648,5 +1649,28 @@
 
             lblTime.ForeColor = Color.White
         End If
+    End Sub
+
+    Private Sub btnSound_Click(sender As Object, e As EventArgs) Handles btnSound.Click
+        If music = True Then
+            music = False
+        ElseIf music = False Then
+            music = True
+        End If
+        activateMusic()
+    End Sub
+
+    Public Sub activateMusic()
+        If music = True Then
+            My.Computer.Audio.Play(My.Resources.juego, AudioPlayMode.BackgroundLoop)
+            btnSound.Image = My.Resources.sonido_act
+        ElseIf music = False Then
+            My.Computer.Audio.Stop()
+            btnSound.Image = My.Resources.sin_sonido
+        End If
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        activateMusic()
     End Sub
 End Class

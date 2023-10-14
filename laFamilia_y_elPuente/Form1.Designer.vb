@@ -49,6 +49,7 @@ Partial Class Form1
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.imgLinterna = New System.Windows.Forms.PictureBox()
         Me.btnReiniciar = New System.Windows.Forms.Button()
+        Me.btnSound = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.papa, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.hija, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -362,6 +363,19 @@ Partial Class Form1
         Me.btnReiniciar.TabIndex = 24
         Me.btnReiniciar.UseVisualStyleBackColor = False
         '
+        'btnSound
+        '
+        Me.btnSound.BackColor = System.Drawing.Color.White
+        Me.btnSound.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnSound.FlatAppearance.BorderSize = 0
+        Me.btnSound.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSound.Image = Global.laFamilia_y_elPuente.My.Resources.Resources.sin_sonido
+        Me.btnSound.Location = New System.Drawing.Point(1029, 27)
+        Me.btnSound.Name = "btnSound"
+        Me.btnSound.Size = New System.Drawing.Size(75, 75)
+        Me.btnSound.TabIndex = 25
+        Me.btnSound.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -369,6 +383,7 @@ Partial Class Form1
         Me.BackgroundImage = Global.laFamilia_y_elPuente.My.Resources.Resources.escenario
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1264, 681)
+        Me.Controls.Add(Me.btnSound)
         Me.Controls.Add(Me.imgLinterna)
         Me.Controls.Add(Me.hijo2Izq)
         Me.Controls.Add(Me.btnReiniciar)
@@ -448,4 +463,5 @@ Partial Class Form1
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents imgLinterna As PictureBox
     Friend WithEvents btnReiniciar As Button
+    Friend WithEvents btnSound As Button
 End Class

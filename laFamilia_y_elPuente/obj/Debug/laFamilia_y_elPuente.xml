@@ -87,6 +87,11 @@ laFamilia_y_elPuente
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:laFamilia_y_elPuente.My.Resources.Resources.juego">
+<summary>
+  Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+</summary>
+</member>
 <member name="P:laFamilia_y_elPuente.My.Resources.Resources.lampara">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -118,6 +123,16 @@ laFamilia_y_elPuente
 </summary>
 </member>
 <member name="P:laFamilia_y_elPuente.My.Resources.Resources.reloj">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:laFamilia_y_elPuente.My.Resources.Resources.sin_sonido">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:laFamilia_y_elPuente.My.Resources.Resources.sonido_act">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>

@@ -185,5 +185,14 @@
   <ItemGroup>
     <None Include="Resources\reinicio.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sin_sonido.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sonido_act.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\juego.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

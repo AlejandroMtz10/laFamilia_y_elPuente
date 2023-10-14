@@ -191,6 +191,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Busca un recurso adaptado de tipo System.IO.UnmanagedMemoryStream similar a System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property juego() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("juego", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property lampara() As System.Drawing.Bitmap
@@ -256,6 +265,26 @@ Namespace My.Resources
         Friend ReadOnly Property reloj() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("reloj", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property sin_sonido() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("sin_sonido", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property sonido_act() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("sonido_act", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

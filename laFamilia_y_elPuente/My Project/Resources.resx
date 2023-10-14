@@ -130,8 +130,14 @@
   <data name="papá" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\papá.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="reinicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reinicio.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="caraHijo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\caraHijo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hijo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hijo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reloj" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reloj.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,9 +154,6 @@
   <data name="lampara" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lampara.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="escenario" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\escenario.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="caraHijo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\caraHijo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,8 +169,8 @@
   <data name="hijo2Izq" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hijo2Izq.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hijo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hijo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="escenario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\escenario.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="caraPapa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\caraPapa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,7 +178,13 @@
   <data name="hijo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hijo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="reinicio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reinicio.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sin_sonido" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sin_sonido.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sonido_act" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sonido_act.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="juego" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\juego.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
