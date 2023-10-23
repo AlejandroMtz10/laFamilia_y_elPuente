@@ -143,7 +143,7 @@
                             hijo.Left = hijo.Left - velHijo
                             imgLinterna.Left = imgLinterna.Left - velHijo
                         End If
-                        If hijo.Left <= 460 Then
+                        If hijo.Left <= 446 Then
                             Timer1.Stop()
                             stateTimer = False
                             hijo.Visible = False
@@ -158,7 +158,7 @@
                             End If
                         End If
                     ElseIf hijoIzq.Visible = True And hijo.Visible = False Then
-                        If hijoIzq.Left >= 200 And hijoIzq.Left <= 700 And stateTimer = True Then
+                        If hijoIzq.Left >= 200 And hijoIzq.Left <= 850 And stateTimer = True Then
                             hijoIzq.Left = hijoIzq.Left + velHijo
                             imgLinterna.Left = imgLinterna.Left + velHijo
                         End If
@@ -234,8 +234,8 @@
                             stateTimer = False
                             checkHijoMenor.Checked = False
                             hijo2.Visible = False
-                            hijo2.Top = 261
-                            hijo2.Left = 912
+                            hijo2.Top = 340
+                            hijo2.Left = 1051
                             hijo2Izq.Visible = True
                             If linternaIzq = False Then
                                 imgLinterna.Left = 391
@@ -253,8 +253,8 @@
                             stateTimer = False
                             checkHijoMenor.Checked = False
                             hijo2Izq.Visible = False
-                            hijo2Izq.Top = 305
-                            hijo2Izq.Left = 242
+                            hijo2Izq.Top = 414
+                            hijo2Izq.Left = 136
                             hijo2.Visible = True
                             If linternaIzq = True Then
                                 linternaIzq = False
