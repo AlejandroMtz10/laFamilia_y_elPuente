@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7DDA469-FE26-407E-9900-D6646FC14E7A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Systems_Engineer_Quiz.My.MyApplication</StartupObject>
+    <RootNamespace>Systems_Engineer_Quiz</RootNamespace>
+    <AssemblyName>Systems Engineer Quiz</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Systems Engineer Quiz.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Systems Engineer Quiz.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942" />
+    <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL" />
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.1.11.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d" />
+    <Reference Include="MySql.Data, Version=8.0.24.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\PrivateAssemblies\MySql.Data.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+    <Reference Include="Zstandard.Net, Version=1.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="apartado_arq_soft.Designer.vb">
+      <DependentUpon>apartado_arq_soft.vb</DependentUpon>
+    </Compile>
+    <Compile Include="apartado_arq_soft.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="apartado_IT.Designer.vb">
+      <DependentUpon>apartado_IT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="apartado_IT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bonusDoc_tester.Designer.vb">
+      <DependentUpon>bonusDoc_tester.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bonusDoc_tester.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bonusDeveloper.Designer.vb">
+      <DependentUpon>bonusDeveloper.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bonusDeveloper.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bonusNet.Designer.vb">
+      <DependentUpon>bonusNet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bonusNet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dev_backend.Designer.vb">
+      <DependentUpon>dev_backend.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dev_backend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dev_frontend.Designer.vb">
+      <DependentUpon>dev_frontend.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dev_frontend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dev_fullstack.Designer.vb">
+      <DependentUpon>dev_fullstack.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dev_fullstack.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dev_IA.Designer.vb">
+      <DependentUpon>dev_IA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dev_IA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dev_movil.Designer.vb">
+      <DependentUpon>dev_movil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dev_movil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dev_ops.Designer.vb">
+      <DependentUpon>dev_ops.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dev_ops.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dev_web.Designer.vb">
+      <DependentUpon>dev_web.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dev_web.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="documentador.Designer.vb">
+      <DependentUpon>documentador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="documentador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="points.vb" />
+    <Compile Include="ramas.Designer.vb">
+      <DependentUpon>ramas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ramas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registros.Designer.vb">
+      <DependentUpon>registros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resultados.Designer.vb">
+      <DependentUpon>resultados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="resultados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainMenu.Designer.vb">
+      <DependentUpon>mainMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="systems_engineer_quizDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>systems_engineer_quizDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tester.Designer.vb">
+      <DependentUpon>tester.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tester.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="apartado_arq_soft.resx">
+      <DependentUpon>apartado_arq_soft.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="apartado_IT.resx">
+      <DependentUpon>apartado_IT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bonusDoc_tester.resx">
+      <DependentUpon>bonusDoc_tester.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bonusDeveloper.resx">
+      <DependentUpon>bonusDeveloper.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bonusNet.resx">
+      <DependentUpon>bonusNet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dev_backend.resx">
+      <DependentUpon>dev_backend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dev_frontend.resx">
+      <DependentUpon>dev_frontend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dev_fullstack.resx">
+      <DependentUpon>dev_fullstack.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dev_IA.resx">
+      <DependentUpon>dev_IA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dev_movil.resx">
+      <DependentUpon>dev_movil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dev_ops.resx">
+      <DependentUpon>dev_ops.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dev_web.resx">
+      <DependentUpon>dev_web.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="documentador.resx">
+      <DependentUpon>documentador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ramas.resx">
+      <DependentUpon>ramas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registros.resx">
+      <DependentUpon>registros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resultados.resx">
+      <DependentUpon>resultados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainMenu.resx">
+      <DependentUpon>mainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tester.resx">
+      <DependentUpon>tester.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="systems_engineer_quizDataSet.xsc">
+      <DependentUpon>systems_engineer_quizDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="systems_engineer_quizDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>systems_engineer_quizDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="systems_engineer_quizDataSet.xss">
+      <DependentUpon>systems_engineer_quizDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_50px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptar white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resultadosWhite.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
