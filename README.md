@@ -39,4 +39,4 @@
 
 ##  Screenshoot. / Capturas de Pantalla.
 
-![Game The Family And The Bridge](./imagenes/Screenshot_app.png)
+![Game The Family And The Bridge](./imagenes/game.png)
