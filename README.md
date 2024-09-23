@@ -39,4 +39,6 @@
 
 ##  Screenshoot. / Capturas de Pantalla.
 
-![Captura del Programa](..\familia_y_puente\imagenes\Screenshot_app.png)
+<div style="display: flex; align-items: center; margin-top:10px;">
+    <img src="../imagenes/Screenshot_app.png">
+</div>
