@@ -38,5 +38,5 @@
 - **Interacción sencilla:** El usuario puede seleccionar qué miembros cruzan el puente en cada turno.
 
 ##  Screenshoot. / Capturas de Pantalla.
-
-![Captura del Programa](ruta/a/tu/captura.png)
+n
+![Captura del Programa](..\familia_y_puente\imagenes\Screenshoot_app.png)
