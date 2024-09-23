@@ -40,5 +40,5 @@
 ##  Screenshoot. / Capturas de Pantalla.
 
 <div style="display: flex; align-items: center; margin-top:10px;">
-    <img src="../imagenes/Screenshot_app.png">
+    <img src="/imagenes/Screenshot_app.pngs" alt="Game The Family And The Bridge.">
 </div>
